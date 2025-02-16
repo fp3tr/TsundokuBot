@@ -9,6 +9,7 @@ TsundokuBot is a Rasa-based chatbot that helps users explore books through **dyn
 The name **TsundokuBot** is inspired by the Japanese term *tsundoku* (積ん読), which refers to the habit of acquiring books and letting them pile up without reading them. This chatbot is designed to help users **overcome indecision** by recommending books based on their preferences, making it easier to decide what to read next.
 
 It demonstrates:
+
 ✅ **Conversational AI capabilities** for engaging interactions  
 ✅ **Real-world API integration** (Google Books API) for live data  
 ✅ **Dynamic slot filling and entity extraction** in Rasa  
