@@ -126,9 +126,8 @@ TsundokuBot includes:
 
 ## 📤 **Submission & Repository Details**
 
-- **GitHub Repository:** [Your Repository Link Here]
-- **Presentation PDF:** [Your Presentation Link Here]
+- **GitHub Repository:** [https://github.com/fp3tr/TsundokuBot.git]
 
-For any issues or questions, contact: **[Your Contact Info]** 📩
+For any issues or questions, contact: **[fp3talt@gmail.com]** 📩
 
 🚀 **Happy Reading with TsundokuBot!** 📚
