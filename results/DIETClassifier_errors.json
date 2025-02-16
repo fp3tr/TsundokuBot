@@ -1,0 +1,26 @@
+[
+  {
+    "text": "1984",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1984",
+        "entity": "book_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9217467308044434,
+        "value": "1984",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

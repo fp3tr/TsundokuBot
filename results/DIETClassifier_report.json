@@ -1,0 +1,51 @@
+{
+  "number": {
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1-score": 0.9523809523809523,
+    "support": 10,
+    "confused_with": {}
+  },
+  "book_title": {
+    "precision": 1.0,
+    "recall": 0.9722222222222222,
+    "f1-score": 0.9859154929577464,
+    "support": 36,
+    "confused_with": {
+      "number": 1
+    }
+  },
+  "author_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 24,
+    "confused_with": {}
+  },
+  "genre": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 21,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.989010989010989,
+    "recall": 0.989010989010989,
+    "f1-score": 0.989010989010989,
+    "support": 91
+  },
+  "macro avg": {
+    "precision": 0.9772727272727273,
+    "recall": 0.9930555555555556,
+    "f1-score": 0.9845741113346747,
+    "support": 91
+  },
+  "weighted avg": {
+    "precision": 0.99000999000999,
+    "recall": 0.989010989010989,
+    "f1-score": 0.9891952447284439,
+    "support": 91
+  },
+  "accuracy": 0.9967320261437909
+}

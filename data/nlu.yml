@@ -1,0 +1,179 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you later
+    - good night
+    - bye
+    - have a nice day
+    - see you around
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - I'm so sad
+    - very sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_recommendation
+  examples: |
+    - Can you recommend a book?
+    - Suggest me a [manga](genre).
+    - I want to read a [fantasy](genre) novel.
+    - Give me a [sci-fi](genre) book recommendation.
+    - Recommend a [horror](genre) comic.
+    - Find me a great [thriller](genre).
+    - Suggest a [romance](genre) novel.
+    - I need [3](number) [mystery](genre) books.
+    - Recommend [2](number) [non-fiction](genre) books.
+    - What are some [action](genre) novels?
+
+- intent: ask_book_info
+  examples: |
+    - Tell me about [Attack on Titan](book_title).
+    - What is [V for Vendetta](book_title) about?
+    - Who wrote [Gone Girl](book_title)?
+    - What year was [The Catcher in the Rye](book_title) released?
+    - Give me details about [Monster](book_title).
+    - What's the rating of [Brave New World](book_title)?
+    - When was [Norwegian Wood](book_title) published?
+    - Tell me the publication year of [Dune](book_title).
+    - What is [Fahrenheit 451](book_title) about?
+    - Who wrote [1Q84](book_title)?
+
+- intent: ask_books_by_author
+  examples: |
+    - Show me books by [Haruki Murakami](author_name).
+    - List novels by [J.K. Rowling](author_name).
+    - I want to see books from [George Orwell](author_name).
+    - Give me a list of books from [Stephen King](author_name).
+    - Find all works by [Agatha Christie](author_name).
+    - Show me books written by [Isaac Asimov](author_name).
+
+- intent: inform_genre
+  examples: |
+    - [fantasy](genre)
+    - [sci-fi](genre)
+    - [horror](genre)
+    - [romance](genre)
+    - [thriller](genre)
+    - [mystery](genre)
+    - [non-fiction](genre)
+    - [action](genre)
+    - [manga](genre)
+    - [graphic novel](genre)
+    - [comic](genre)
+
+- intent: inform_book
+  examples: |
+    - [Dune](book_title)
+    - [Harry Potter](book_title)
+    - [The Hobbit](book_title)
+    - [The Catcher in the Rye](book_title)
+    - [Fahrenheit 451](book_title)
+    - [1984](book_title)
+
+- intent: inform_author
+  examples: |
+    - [Haruki Murakami](author_name)
+    - [J.K. Rowling](author_name)
+    - [Stephen King](author_name)
+    - [George Orwell](author_name)
+    - [Agatha Christie](author_name)
+    - [Isaac Asimov](author_name)
+
+- intent: inform_number
+  examples: |
+    - [1](number)
+    - [2](number)
+    - [3](number)
+    - [4](number)
+    - [5](number)
+    - I want [2](number) books.
+    - Can you recommend [3](number) novels?
+    - Give me [4](number) fantasy books.
+
+- lookup: book_title
+  examples: |
+    - Attack on Titan
+    - V for Vendetta
+    - Gone Girl
+    - The Catcher in the Rye
+    - Brave New World
+    - Fahrenheit 451
+    - 1Q84
+    - Dune
+    - The Hobbit
+    - Norwegian Wood
+    - Harry Potter and the Philosopher's Stone
+
+- lookup: genre
+  examples: |
+    - fantasy
+    - sci-fi
+    - horror
+    - romance
+    - thriller
+    - mystery
+    - non-fiction
+    - action
+    - manga
+    - comic
+    - graphic novel
+
+- lookup: author_name
+  examples: |
+    - Haruki Murakami
+    - J.K. Rowling
+    - Stephen King
+    - George Orwell
+    - Agatha Christie
+    - Isaac Asimov

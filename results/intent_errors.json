@@ -1,0 +1,10 @@
+[
+  {
+    "text": "1984",
+    "intent": "inform_book",
+    "intent_prediction": {
+      "name": "inform_number",
+      "confidence": 0.9707222580909729
+    }
+  }
+]

@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - ask_recommendation
+  - ask_book_info
+  - ask_books_by_author
+  - inform_genre
+  - inform_book
+  - inform_author
+  - inform_number
+  - affirm
+  - deny
+  - nlu_fallback
+  - mood_great
+  - mood_unhappy
+
+entities:
+  - genre
+  - book_title
+  - author_name
+  - number
+
+slots:
+  genre:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: genre
+  book_title:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: book_title
+      - type: from_text
+  author_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: author_name
+      - type: from_text
+  number:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: number
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_iamabot:
+    - text: "I am TsundokuBot, your book recommendation assistant."
+  utter_ask_genre:
+    - text: "What genre of books are you interested in?"
+  utter_ask_book_title:
+    - text: "Which book would you like details about?"
+  utter_ask_author:
+    - text: "Which author's books are you looking for?"
+  utter_confirm_recommendation:
+    - text: "Here are some book recommendations for you."
+  utter_default_fallback:
+    - text: "I'm sorry, I didn't understand that. Could you rephrase?"
+  utter_happy:
+    - text: "Great! How can I help you find your next book?"
+  utter_cheer_up:
+    - text: "Here's a book recommendation that might cheer you up!"
+  utter_api_error:
+    - text: "I'm having trouble accessing the book database right now. Please try again later."
+  utter_no_books_found:
+    - text: "I couldn't find any books that match your request. Would you like to try another genre or author?"
+
+actions:
+  - action_recommend_book
+  - action_get_book_info
+  - action_get_books_by_author
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

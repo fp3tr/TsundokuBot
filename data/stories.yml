@@ -1,0 +1,49 @@
+vversion: "3.1"
+
+stories:
+- story: User asks for book recommendations with genre
+  steps:
+  - intent: ask_recommendation
+    entities:
+      - genre: fantasy
+  - action: action_recommend_book
+
+- story: User provides missing genre info
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_genre
+  - intent: inform_genre
+  - action: action_recommend_book
+
+- story: User asks for book information
+  steps:
+  - intent: ask_book_info
+    entities:
+      - book_title: "Sharp Objects"
+  - action: action_get_book_info
+
+
+- story: User asks for books by an author
+  steps:
+  - intent: ask_books_by_author
+    entities:
+      - author_name: "Haruki Murakami"
+  - action: action_get_books_by_author
+
+
+- story: User asks for book recommendations without specifying a genre
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_genre
+  - intent: deny
+  - action: utter_goodbye
+
+- story: User confirms book recommendations
+  steps:
+  - intent: affirm
+  - action: utter_confirm_recommendation
+
+- story: User denies book recommendations
+  steps:
+  - intent: deny
+  - action: utter_goodbye
